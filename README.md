@@ -43,8 +43,9 @@ alias nlog='tail -f /var/log/nginx/error.log'
 alias nlogg='tail -f /var/log/nginx/access.log'
 
 
-alias pconf='vim /etc/php5/fpm/pool.d/www.conf'
-alias pconff='vim /etc/php5/fpm/php-fpm.conf'
+alias pini='vim /etc/php5/fpm/php.ini'
+alias pconf='vim /etc/php5/fpm/php-fpm.conf'
+alias pconff='vim /etc/php5/fpm/pool.d/www.conf'
 alias pstart='service php5-fpm restart'
 alias pstop='service php5-fpm stop'
 alias psite='cd /etc/php5/fpm/pool.d'
