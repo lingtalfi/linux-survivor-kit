@@ -22,6 +22,10 @@ Copy paste in your root's .bashrc and continue what you were doing...
 ### Ubuntu14
 
 ```bash
+
+
+alias ll='ls -lArth'
+
 alias aa='vim ~/.bashrc'
 alias aas='source ~/.bashrc'
 alias aconf='vim /etc/apache2/sites-available/000-default.conf'
