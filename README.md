@@ -46,6 +46,10 @@ alias pstop='service php5-fpm stop'
 alias psite='cd /etc/php5/fpm/pool.d'
 alias plog='tail -f /var/log/php5-fpm.log'
 
+
+alias vimrc='vim ~/.vimrc'
+alias vimt='vim -c "NERDTree" $1'
+
 ```
 
 
