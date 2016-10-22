@@ -70,6 +70,8 @@ apt-get install -y tree
 apt-get install -y vim
 apt-get install -y nginx
 apt-get install -y php5-fpm
+apt-get install -y git
+apt-get install -y tmux
 
 # then for security it's recommended that you add this line in your php.ini:  cgi.fix_pathinfo=1 (it will prevent php from
 # trying to get a close match to the exact request from the client, which could lead to security issues )
