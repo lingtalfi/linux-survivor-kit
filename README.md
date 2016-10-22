@@ -59,3 +59,33 @@ alias vimt='vim -c "NERDTree" $1'
 
 
 
+Quick start
+------------------
+
+Also to create a nginx php server rapidly on a fresh linux, you can do this:
+
+```bash
+apt-get update
+apt-get install -y nginx
+apt-get install -y php5-fpm
+
+# then for security it's recommended that you add this line in your php.ini:  cgi.fix_pathinfo=1 (it will prevent php from
+# trying to get a close match to the exact request from the client, which could lead to security issues )
+
+# then, you should configure your vim: https://github.com/lingtalfi/vim-survivor-kit
+
+# add vim syntax highlighting for nginx conf: https://arian.io/vim-syntax-highlighting-for-nginx/
+cd
+wget -O nginx.vim http://www.vim.org/scripts/download_script.php\?src_id\=19394
+mkdir -p ~/.vim/syntax  
+mv nginx.vim ~/.vim/syntax/  
+vim ~/.vim/filetype.vim  
+
+# (paste the following line in ~/.vim/filetype.vim)
+au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif   
+```
+
+
+
+
+
