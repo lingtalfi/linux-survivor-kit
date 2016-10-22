@@ -66,6 +66,8 @@ Also to create a nginx php server rapidly on a fresh linux, you can do this:
 
 ```bash
 apt-get update
+apt-get install -y tree
+apt-get install -y vim
 apt-get install -y nginx
 apt-get install -y php5-fpm
 
