@@ -69,7 +69,7 @@ apt-get update
 apt-get install -y tree
 apt-get install -y vim
 apt-get install -y nginx
-apt-get install -y php5-fpm
+apt-get install -y php5-fpm # on ubuntu16, you can use php7.0-fpm instead
 apt-get install -y git
 apt-get install -y tmux
 
