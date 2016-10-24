@@ -59,6 +59,46 @@ alias vimt='vim -c "NERDTree" $1'
 
 
 
+### Ubuntu16
+
+```bash
+
+
+alias ll='ls -lArth'
+
+alias aa='vim ~/.bashrc'
+alias aas='source ~/.bashrc'
+alias aconf='vim /etc/apache2/sites-available/000-default.conf'
+alias alog='tail -f /var/log/apache2/error.log'
+alias alogg='tail -f /var/log/apache2/access.log'
+alias ar='service apache2 restart'
+
+
+alias nstart='service nginx start'
+alias nstop='service nginx stop'
+alias nr='service nginx reload'
+alias nconf='vim /etc/nginx/nginx.conf'
+alias nsite='cd /etc/nginx/conf.d'
+alias nlog='tail -f /var/log/nginx/error.log'
+alias nlogg='tail -f /var/log/nginx/access.log'
+
+
+alias pini='vim /etc/php/7.0/fpm/php.ini'
+alias pconf='vim /etc/php/7.0/fpm/php-fpm.conf'
+alias pconff='vim /etc/php/7.0/fpm/pool.d/www.conf'
+alias pstart='service php7.0-fpm restart'
+alias pstop='service php7.0-fpm stop'
+alias psite='cd /etc/php/7.0/fpm/pool.d'
+alias plog='tail -f /var/log/php7.0-fpm.log'
+
+
+alias vimrc='vim ~/.vimrc'
+alias vimt='vim -c "NERDTree" $1'
+
+```
+
+
+
 Quick start
 ------------------
 
@@ -67,11 +107,11 @@ Also to create a nginx php server rapidly on a fresh linux, you can do this:
 ```bash
 apt-get update
 apt-get install -y tree
-apt-get install -y vim
+apt-get install -y vim # already installed on ubuntu16
 apt-get install -y nginx
 apt-get install -y php5-fpm # on ubuntu16, you can use php7.0-fpm instead
-apt-get install -y git
-apt-get install -y tmux
+apt-get install -y git # already installed on ubuntu16
+apt-get install -y tmux # already installed on ubuntu16
 
 # then for security it's recommended that you add this line in your php.ini:  cgi.fix_pathinfo=1 (it will prevent php from
 # trying to get a close match to the exact request from the client, which could lead to security issues )
